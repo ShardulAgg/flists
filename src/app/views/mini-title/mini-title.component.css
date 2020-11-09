@@ -1,0 +1,26 @@
+.bg_warning.pull-right.text-white {
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+  }
+  .h3.mega-title.text-white {
+    position: relative;
+}
+.text-white.btn.btn-dark.btn-rounded.tag {
+    border-radius: 50px;
+    font-size: 8px;
+    padding: 3px 6px;
+    background-color: #272424;
+    text-transform: capitalize;
+}
+.text-white.btn.btn-dark.btn-rounded.tag2 {
+    border-radius: 50px;
+    font-size:10px;
+    padding: 3px 6px;
+    background-color: #272424;
+    text-transform: capitalize;
+}
+.text-white.btn.btn-success.btn-rounded.tag2{text-transform: capitalize;border-radius: 50px;
+    font-size:10px;
+    padding: 3px 6px;
+    background-color: #38CE7F;white-space: nowrap;}

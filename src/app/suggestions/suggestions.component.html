@@ -1,0 +1,55 @@
+<div class="section">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="col-md-12">
+          
+        <div class="bg-dark p-4">
+            <fieldset>
+                <legend class="text-white mb-3">Roll Suggestions</legend>
+                 
+            </fieldset>    
+            <div class="row">
+            <div class="col-md-4">
+                <div class="slidecontainer text-white">
+                 Mininimum IMDb Ratings   <input type="range" min="1" max="100" value="50" class="slider border-none" id="myRange">
+                  </div>
+                  <div class="slidecontainer text-white">
+                      Minimum Rotten Tomatoes    <input type="range" min="1" max="100" value="50" class="slider border-none" id="myRange">
+                       </div>
+                  </div>
+
+                  <div class="col-md-4 p-0 text-center">
+                      <button type="button" class="btn btn-secondary mt-2" aria-expanded="false">What Your Mood</button>
+                      <div style="clear:both"></div>
+                      <button type="button" class="btn btn-secondary mt-2" aria-expanded="false">TV</button>
+                      <button type="button" class="btn btn-secondary mt-2" aria-expanded="false">Movie</button>
+                      <div style="clear:both"></div>
+                      <button type="button" class="btn btn-secondary mt-2" aria-expanded="false">Genre</button>  <div style="clear:both"></div>
+                      <button type="button" class="btn btn-secondary mt-2" aria-expanded="false">Year</button>
+
+                  </div>
+                  <div class="col-md-4 p-0 text-center d_flex middle">
+                     <div class="d_flex">
+                      <button type="button" class="btn btn-success" aria-expanded="false" (click)="searchinverse()">Search</button>
+                      </div>
+                  </div>
+                  </div>
+  
+        </div>
+
+            </div>
+        
+      </div>
+
+        <div class="col-md-2"></div>
+       </div>
+    </div>
+</div> 
+
+
+
+<app-mini-title  [titleID]="sugg[1]" *ngIf="cond"></app-mini-title>
+<app-mini-title  [titleID]="sugg[2]" *ngIf="cond"></app-mini-title>
+<app-mini-title  [titleID]="sugg[3]" *ngIf="cond"></app-mini-title>

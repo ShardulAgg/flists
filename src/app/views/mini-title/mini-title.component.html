@@ -1,0 +1,75 @@
+<div class="slide">
+    <div class="lazyload mt-5">
+     <div class="container"> 
+       <div class="bg-dark p-0">
+    <div class="row">
+  
+      <div class="iframe_videos col-md-5">
+      <div class="lazyload">
+        <iframe width="560" height="320" [src]="vurl | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class=" classic middle text-left mt-5">
+          <div class=" middle">
+            <div class="container_inner">
+                <div class="wrap-caption left">
+                  <h2 class="h3 mega-title text-white"><a href="title/{{titleID}}" class="text-white h2 font-weight-bold">{{title}}</a>
+                <span class="bg_warning pull-right text-white" style="font-size: 16px;"><img src="assets/images/image 4.png" width="50">
+                  <span style="display: inline-block;position: relative;top: 4px;left: 2px;">
+                      <span>{{this.data['imdbRating']}}</span>
+                    <span style="border-top:1px solid #fff;font-size: 11px;display: block;">{{this.data['imdbVotes']}}</span>
+                  </span>
+                  <br class="mt-2 clear d-block">
+                  <span><img src="assets/images/image 5.png" width="25" style="margin-left: 15px;
+                    margin-right: 10px;"> 70%</span>
+                  </span>
+                
+                </h2>
+                  <p><a class="text-white btn btn-dark btn-rounded tag">Comedy</a>&nbsp; <a class="text-white btn btn-dark btn-rounded tag">Drama</a></p>
+                  <p class="text-white">{{shortDescription}}</p>
+                  
+                </div>
+                <div style="clear:both"></div>
+                <div class="row mt-4 px-3">
+                    <div class="col-md-4 border-right p-0">
+                      <p class="mb-2"><a class="text-white btn btn-dark btn-rounded tag2"><i class="fa fa-check"></i> Seen it</a></p>
+                      <p class="mb-2"><a class="text-white btn btn-dark btn-rounded tag2"><i class="fa fa-plus"></i> Watch Later</a></p>
+                      <p><a class="text-white btn btn-success btn-rounded tag2"><i class="fa fa-plus"></i> Add to My Flicklists</a></p>
+                        
+                    </div>
+                  <div class="col-md-8">
+                    <h5 class="h3 text-white">Watch Now On</h5>
+                      <a href="{{this.otts['netflix']['src']}}" *ngIf="this.otts['netflix']['cb']"><img class="mb-1" [src]="this.otts['netflix']['img']"></a>&nbsp;
+                      <a href="{{this.otts['amazonprimevideo']['src']}}" *ngIf="this.otts['amazonprimevideo']['cb']"><img class="mb-1" [src]="this.otts['amazonprimevideo']['img']"></a>&nbsp;
+                      <a href="{{this.otts['hotstar']['src']}}" *ngIf="this.otts['hotstar']['cb']"><img class="mb-1" [src]="this.otts['hotstar']['img']"></a>&nbsp;
+                      <a href="{{this.otts['crunchyroll']['src']}}" *ngIf="this.otts['crunchyroll']['cb']"><img class="mb-1" [src]="this.otts['crunchyroll']['img']"></a>&nbsp;
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+       </div>  
+  
+     <div class="col-md-2">
+       <div class="single_img">
+      <a href="title/{{titleID}}" class="text-white">                   <img src="{{img}}" class="img-fluid"></a>
+      <p class="text_right text-white mt-4">
+        <span class="text-left">
+        <a href="#" class="text-white"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
+        </span>
+        <span class="text-right pull-right">
+        <a href="#" class="text-white px-3"><i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i></a>&nbsp;<a href="#" class="text-white"><i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i></a>
+      </span>
+      </p>
+      </div>
+  
+     </div>
+     </div> 
+     </div>
+     </div>
+    </div>
+  </div>
+  
+  
